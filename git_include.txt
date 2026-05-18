@@ -26,3 +26,4 @@ assets/img/illust_sw_engineer.png
 assets/img/illust_analysis_engineer.png
 assets/img/Gates_of_Hell.png
 assets/img/ClassObject.png
+assets/img/Tailscale_concept.png
