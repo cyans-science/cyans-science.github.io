@@ -38,7 +38,7 @@ This means the laptop and workstation communicate as if they were on the same lo
 
 The overal configuration is shown in the figure below.
 
-![Remote Connection with Tailscale](/assets/img/Tailscale_concept.png)
+![Remote Connection with Tailscale](/assets/img/Tailscale_concept.png){: width="50%" } 
 
 
 # Setup After Installation 
@@ -99,7 +99,7 @@ hostname -I
 The forwarding rule tells Windows to listen for SSH traffic on port 22 and forward it to the SSH server running inside WSL.
 
 <pre class="windows-terminal">
-netsh interface portproxy add v4tov4 listenport=22 listenaddress=0.0.0.0 connectport=22 connectaddress=172.22.14.40
+netsh interface portproxy add v4tov4 listenport=22 listenaddress=0.0.0.0 connectport=22 connectaddress=(laptop Tailscale IP address)
 </pre>
 
 Also allow the Windows firewall to accept incoming SSH traffic:
